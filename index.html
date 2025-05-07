@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakes&Shakes - Fresh Juices & Smoothies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Shakes<span>&</span>Shakes</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html" class="btn">Order Online</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Fresh. Healthy. Delicious.</h1>
+                <p>Discover our wide variety of shakes, smoothies, and fresh juices made with the finest ingredients.</p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="btn">View Menu</a>
+                    <a href="order.html" class="btn btn-outline">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Our Signature Creations</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71" alt="Tropical Bliss Smoothie">
+                    <h3>Tropical Bliss</h3>
+                    <p>A refreshing blend of mango, pineapple, banana, and coconut milk.</p>
+                    <span class="price">₹199</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1519996529931-28324d5a630e" alt="Berry Blast Shake">
+                    <h3>Berry Blast</h3>
+                    <p>Mixed berries, Greek yogurt, honey, and almond milk for a protein-packed treat.</p>
+                    <span class="price">₹249</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1536599424071-0b215a388ba7" alt="Green Detox Juice">
+                    <h3>Green Detox</h3>
+                    <p>Kale, spinach, apple, lemon, and ginger to cleanse and energize.</p>
+                    <span class="price">₹289</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2020, Shakes&Shakes began with a simple mission: to provide delicious, healthy beverages made from fresh, natural ingredients. Our passion for quality and flavor drives everything we do.</p>
+                    <a href="about.html" class="btn">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1515125520141-3e3b67bc0a88" alt="Our Juice Bar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <p>"The best smoothies in town! I come here every morning before work for my Green Detox fix."</p>
+                    <div class="customer">
+                        <span class="name">Vani Sethi</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"I love the variety at Shakes&Shakes. There's always something new to try, and everything is delicious."</p>
+                    <div class="customer">
+                        <span class="name">Krish K. Khalko</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"As a fitness enthusiast, I appreciate their commitment to using healthy, natural ingredients."</p>
+                    <div class="customer">
+                        <span class="name">Rahul Thakur</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for seasonal specials, new products, and exclusive discounts.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Shakes&Shakes</h3>
+                    <p>Fresh. Healthy. Delicious. Your destination for premium shakes, smoothies, and juices.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> New Delhi, Dwaraka </li>
+                        <li><i class="fas fa-phone"></i>+91 9569711841</li>
+                        <li><i class="fas fa-envelope"></i> info@shakesandshakes.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Hours</h3>
+                    <ul>
+                        <li>Monday - Friday: 7am - 9pm</li>
+                        <li>Saturday: 8am - 10pm</li>
+                        <li>Sunday: 8am - 8pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Shakes&Shakes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

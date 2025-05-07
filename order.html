@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online - Shakes&Shakes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Shakes<span>&</span>Shakes</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html" class="active btn">Order Online</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Order Hero -->
+    <section class="page-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1515125520141-3e3b67bc0a88')">
+        <div class="container">
+            <h1>Order Online</h1>
+            <p>Get your favorite shakes and juices delivered or ready for pickup</p>
+        </div>
+    </section>
+
+    <!-- Order Process -->
+    <section class="order-process">
+        <div class="container">
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Choose Your Items</h3>
+                    <p>Browse our menu and add items to your cart</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Delivery or Pickup</h3>
+                    <p>Select your preferred method</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Checkout</h3>
+                    <p>Enter your details and payment</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Enjoy!</h3>
+                    <p>Receive your order confirmation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section class="order-form-section">
+        <div class="container">
+            <div class="order-container">
+                <!-- Menu Selection -->
+                <div class="menu-selection">
+                    <h2>Our Menu</h2>
+                    <div class="menu-filter">
+                        <button class="filter-btn active" data-category="all">All Items</button>
+                        <button class="filter-btn" data-category="smoothies">Smoothies</button>
+                        <button class="filter-btn" data-category="shakes">Shakes</button>
+                        <button class="filter-btn" data-category="juices">Juices</button>
+                    </div>
+
+                    <div class="menu-items">
+                        <!-- Smoothies -->
+                        <div class="menu-category" data-category="smoothies">
+                            <h3>Smoothies</h3>
+                            <div class="menu-item" data-item="tropical-bliss">
+                                <div class="item-info">
+                                    <h4>Tropical Bliss</h4>
+                                    <p>Mango, pineapple, banana, coconut milk</p>
+                                    <span class="price">₹199</span>
+                                </div>
+                                <button class="add-to-cart">+ Add</button>
+                            </div>
+                            <div class="menu-item" data-item="berry-blast">
+                                <div class="item-info">
+                                    <h4>Berry Blast</h4>
+                                    <p>Mixed berries, Greek yogurt, honey, almond milk</p>
+                                    <span class="price">₹249</span>
+                                </div>
+                                <button class="add-to-cart">+ Add</button>
+                            </div>
+                            <div class="menu-item" data-item="green-machine">
+                                <div class="item-info">
+                                    <h4>Green Machine</h4>
+                                    <p>Spinach, kale, apple, banana, almond butter</p>
+                                    <span class="price">₹189</span>
+                                </div>
+                                <button class="add-to-cart">+ Add</button>
+                            </div>
+                        </div>
+
+                        <!-- Shakes -->
+                        <div class="menu-category" data-category="shakes">
+                            <h3>Shakes</h3>
+                            <div class="menu-item" data-item="chocolate-dream">
+                                <div class="item-info">
+                                    <h4>Chocolate Dream</h4>
+                                    <p>Chocolate ice cream, milk, whipped cream</p>
+                                    <span class="price">₹209</span>
+                                </div>
+                                <button class="add-to-cart">+ Add</button>
+                            </div>
+                            <div class="menu-item" data-item="vanilla-cloud">
+                                <div class="item-info">
+                                    <h4>Vanilla Cloud</h4>
+                                    <p>Vanilla ice cream, milk, caramel drizzle</p>
+                                    <span class="price">₹199</span>
+                                </div>
+                                <button class="add-to-cart">+ Add</button>
+                            </div>
+                            <div class="menu-item" data-item="strawberry Fields">
+                                <div class="item-info">
+                                    <h4>Strawberry Fields</h4>
+                                    <p>Strawberry ice cream, fresh strawberries, milk</p>
+                                    <span class="price">₹189</span>
+                                </div>
+                                <button class="add-to-cart">+ Add</button>
+                            </div>
+                        </div>
+
+                        <!-- Juices -->
+                        <div class="menu-category" data-category="juices">
+                            <h3>Cold-Pressed Juices</h3>
+                            <div class="menu-item" data-item="green-detox">
+                                <div class="item-info">
+                                    <h4>Green Detox</h4>
+                                    <p>Kale, spinach, apple, lemon, ginger</p>
+                                    <span class="price">₹289</span>
+                                </div>
+                                <button class="add-to-cart">+ Add</button>
+                            </div>
+                            <div class="menu-item" data-item="citrus-sunrise">
+                                <div class="item-info">
+                                    <h4>Citrus Sunrise</h4>
+                                    <p>Orange, carrot, turmeric, ginger</p>
+                                    <span class="price">₹189</span>
+                                </div>
+                                <button class="add-to-cart">+ Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <h2>Your Order</h2>
+                    <div class="summary-content">
+                        <div class="delivery-options">
+                            <h3>Delivery Method</h3>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="delivery" value="pickup" checked>
+                                    <span>Pickup</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="delivery" value="delivery">
+                                    <span>Delivery</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="cart-items">
+                            <h3>Items</h3>
+                            <div class="items-list">
+                                <!-- Items will be added here dynamically -->
+                                <p class="empty-cart">Your cart is empty</p>
+                            </div>
+                            <div class="cart-totals">
+                                <div class="subtotal">
+                                    <span>Subtotal:</span>
+                                    <span class="amount">$0.00</span>
+                                </div>
+                                <div class="tax">
+                                    <span>Tax (8%):</span>
+                                    <span class="amount">$0.00</span>
+                                </div>
+                                <div class="delivery-fee">
+                                    <span>Delivery Fee:</span>
+                                    <span class="amount">$0.00</span>
+                                </div>
+                                <div class="total">
+                                    <span>Total:</span>
+                                    <span class="amount">$0.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="checkout-form">
+                            <h3>Customer Information</h3>
+                            <form id="checkoutForm">
+                                <div class="form-group">
+                                    <label for="name">Full Name*</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number*</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email*</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group delivery-address" style="display: none;">
+                                    <label for="address">Delivery Address*</label>
+                                    <input type="text" id="address" name="address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="instructions">Special Instructions</label>
+                                    <textarea id="instructions" name="instructions" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn checkout-btn" disabled>Complete Order</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Shakes&Shakes</h3>
+                    <p>Fresh. Healthy. Delicious. Your destination for premium shakes, smoothies, and juices.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> New Delhi, Dwarka</li>
+                        <li><i class="fas fa-phone"></i> +91 9569711841</li>
+                        <li><i class="fas fa-envelope"></i> info@shakesandshakes.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Hours</h3>
+                    <ul>
+                        <li>Monday - Friday: 7am - 9pm</li>
+                        <li>Saturday: 8am - 10pm</li>
+                        <li>Sunday: 8am - 8pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Shakes&Shakes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Order Page JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Cart functionality
+            const cart = {
+                items: [],
+                addItem: function(item) {
+                    const existingItem = this.items.find(i => i.id === item.id);
+                    if (existingItem) {
+                        existingItem.quantity++;
+                    } else {
+                        this.items.push({...item, quantity: 1});
+                    }
+                    this.updateCart();
+                },
+                removeItem: function(itemId) {
+                    this.items = this.items.filter(item => item.id !== itemId);
+                    this.updateCart();
+                },
+                updateQuantity: function(itemId, newQuantity) {
+                    const item = this.items.find(i => i.id === itemId);
+                    if (item) {
+                        item.quantity = newQuantity;
+                        if (item.quantity <= 0) {
+                            this.removeItem(itemId);
+                        }
+                    }
+                    this.updateCart();
+                },
+                calculateTotals: function() {
+                    const subtotal = this.items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                    const tax = subtotal * 0.08;
+                    const deliveryFee = document.querySelector('input[name="delivery"]:checked').value === 'delivery' ? 3.99 : 0;
+                    const total = subtotal + tax + deliveryFee;
+                    
+                    return {
+                        subtotal: subtotal.toFixed(2),
+                        tax: tax.toFixed(2),
+                        deliveryFee: deliveryFee.toFixed(2),
+                        total: total.toFixed(2)
+                    };
+                },
+                updateCart: function() {
+                    const itemsList = document.querySelector('.items-list');
+                    const emptyCartMsg = document.querySelector('.empty-cart');
+                    
+                    // Clear the cart display
+                    itemsList.innerHTML = '';
+                    
+                    if (this.items.length === 0) {
+                        emptyCartMsg.style.display = 'block';
+                        document.querySelector('.checkout-btn').disabled = true;
+                    } else {
+                        emptyCartMsg.style.display = 'none';
+                        document.querySelector('.checkout-btn').disabled = false;
+                        
+                        // Add each item to the cart display
+                        this.items.forEach(item => {
+                            const itemElement = document.createElement('div');
+                            itemElement.className = 'cart-item';
+                            itemElement.innerHTML = `
+                                <div class="item-details">
+                                    <h4>${item.name}</h4>
+                                    <div class="item-controls">
+                                        <button class="quantity-btn minus" data-id="${item.id}">-</button>
+                                        <span class="quantity">${item.quantity}</span>
+                                        <button class="quantity-btn plus" data-id="${item.id}">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-price">$${(item.price * item.quantity).toFixed(2)}</div>
+                                <button class="remove-item" data-id="${item.id}"><i class="fas fa-times"></i></button>
+                            `;
+                            itemsList.appendChild(itemElement);
+                        });
+                    }
+                    
+                    // Update totals
+                    const totals = this.calculateTotals();
+                    document.querySelector('.subtotal .amount').textContent = `$${totals.subtotal}`;
+                    document.querySelector('.tax .amount').textContent = `$${totals.tax}`;
+                    document.querySelector('.delivery-fee .amount').textContent = `$${totals.deliveryFee}`;
+                    document.querySelector('.total .amount').textContent = `$${totals.total}`;
+                    
+                    // Save to localStorage
+                    localStorage.setItem('shakesCart', JSON.stringify(this.items));
+                }
+            };
+            
+            // Load cart from localStorage
+            const savedCart = localStorage.getItem('shakesCart');
+            if (savedCart) {
+                cart.items = JSON.parse(savedCart);
+                cart.updateCart();
+            }
+            
+            // Menu items data
+            const menuItems = {
+                'tropical-bliss': { id: 'tropical-bliss', name: 'Tropical Bliss', price: 6.99 },
+                'berry-blast': { id: 'berry-blast', name: 'Berry Blast', price: 7.49 },
+                'green-machine': { id: 'green-machine', name: 'Green Machine', price: 6.99 },
+                'chocolate-dream': { id: 'chocolate-dream', name: 'Chocolate Dream', price: 7.99 },
+                'vanilla-cloud': { id: 'vanilla-cloud', name: 'Vanilla Cloud', price: 7.49 },
+                'green-detox': { id: 'green-detox', name: 'Green Detox', price: 5.99 },
+                'citrus-sunrise': { id: 'citrus-sunrise', name: 'Citrus Sunrise', price: 5.99 }
+            };
+            
+            // Add to cart buttons
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    const itemId = this.closest('.menu-item').getAttribute('data-item');
+                    cart.addItem(menuItems[itemId]);
+                    
+                    // Visual feedback
+                    this.textContent = 'Added!';
+                    setTimeout(() => {
+                        this.textContent = '+ Add';
+                    }, 1000);
+                });
+            });
+            
+            // Cart item controls (delegated events)
+            document.querySelector('.items-list').addEventListener('click', function(e) {
+                const target = e.target.closest('.quantity-btn') || e.target.closest('.remove-item');
+                if (!target) return;
+                
+                const itemId = target.getAttribute('data-id');
+                
+                if (target.classList.contains('minus')) {
+                    const item = cart.items.find(i => i.id === itemId);
+                    cart.updateQuantity(itemId, item.quantity - 1);
+                } else if (target.classList.contains('plus')) {
+                    const item = cart.items.find(i => i.id === itemId);
+                    cart.updateQuantity(itemId, item.quantity + 1);
+                } else if (target.classList.contains('remove-item')) {
+                    cart.removeItem(itemId);
+                }
+            });
+            
+            // Delivery method toggle
+            document.querySelectorAll('input[name="delivery"]').forEach(radio => {
+                radio.addEventListener('change', function() {
+                    const deliveryAddress = document.querySelector('.delivery-address');
+                    if (this.value === 'delivery') {
+                        deliveryAddress.style.display = 'block';
+                        document.querySelector('#address').required = true;
+                    } else {
+                        deliveryAddress.style.display = 'none';
+                        document.querySelector('#address').required = false;
+                    }
+                    cart.updateCart();
+                });
+            });
+            
+            // Form submission
+            document.getElementById('checkoutForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // In a real app, you would process the payment here
+                // For this demo, we'll just show a confirmation
+                
+                const orderDetails = {
+                    customer: {
+                        name: document.getElementById('name').value,
+                        phone: document.getElementById('phone').value,
+                        email: document.getElementById('email').value,
+                        address: document.querySelector('input[name="delivery"]:checked').value === 'delivery' 
+                            ? document.getElementById('address').value 
+                            : 'Pickup',
+                        instructions: document.getElementById('instructions').value
+                    },
+                    items: cart.items,
+                    totals: cart.calculateTotals(),
+                    method: document.querySelector('input[name="delivery"]:checked').value
+                };
+                
+                // Show confirmation (in a real app, you might redirect to a confirmation page)
+                alert(`Thank you for your order, ${orderDetails.customer.name}!\n\nYour order total is $${orderDetails.totals.total}.\n\nYou will receive a confirmation email shortly.`);
+                
+                // Clear the cart
+                cart.items = [];
+                cart.updateCart();
+                this.reset();
+                localStorage.removeItem('shakesCart');
+            });
+            
+            // Menu filtering
+            document.querySelectorAll('.filter-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    // Update active button
+                    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const category = this.getAttribute('data-category');
+                    const menuCategories = document.querySelectorAll('.menu-category');
+                    
+                    menuCategories.forEach(cat => {
+                        if (category === 'all' || cat.getAttribute('data-category') === category) {
+                            cat.style.display = 'block';
+                        } else {
+                            cat.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

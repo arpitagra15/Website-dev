@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Shakes&Shakes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Shakes<span>&</span>Shakes</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html" class="active">Our Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html" class="btn">Order Online</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Products Hero -->
+    <section class="page-hero" style="background-image: linear-gradient(rgba(179, 206, 249, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1505576399279-565b52d4ac71')">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Discover our delicious range of shakes, smoothies, and juices</p>
+        </div>
+    </section>
+
+    <!-- Menu Filter -->
+    <section class="menu-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="btn filter-btn active" data-filter="all">All Items</button>
+                <button class="btn filter-btn" data-filter="smoothies">Smoothies</button>
+                <button class="btn filter-btn" data-filter="shakes">Shakes</button>
+                <button class="btn filter-btn" data-filter="juices">Juices</button>
+                <button class="btn filter-btn" data-filter="boosters">Boosters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-grid">
+        <div class="container">
+            <div class="products-container">
+                <!-- Smoothies -->
+                <div class="product-category">
+                    <h2 class="category-title">Smoothies</h2>
+                    <div class="category-items">
+                        <div class="product-card" data-category="smoothies">
+                            <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71" alt="Tropical Bliss">
+                            <div class="product-info">
+                                <h3>Tropical Bliss</h3>
+                                <p>Mango, pineapple, banana, coconut milk</p>
+                                <div class="product-footer">
+                                    <span class="price">₹199</span>
+                                    <button class="btn btn-sm">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-category="smoothies">
+                            <img src="https://images.unsplash.com/photo-1519996529931-28324d5a630e" alt="Berry Blast">
+                            <div class="product-info">
+                                <h3>Berry Blast</h3>
+                                <p>Mixed berries, Greek yogurt, honey, almond milk</p>
+                                <div class="product-footer">
+                                    <span class="price">₹249</span>
+                                    <button class="btn btn-sm">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-category="smoothies">
+                            <img src="C:\Users\Arpit\OneDrive\Documents\Desktop/green.bmp" alt="Green Machine">
+                            <div class="product-info">
+                                <h3>Green Machine</h3>
+                                <p>Kiwi,Spinach, kale, apple, banana, almond butter</p>
+                                <div class="product-footer">
+                                    <span class="price">₹189</span>
+                                    <button class="btn btn-sm">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shakes -->
+                <div class="product-category">
+                    <h2 class="category-title">Shakes</h2>
+                    <div class="category-items">
+                        <div class="product-card" data-category="shakes">
+                            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699" alt="Chocolate Dream">
+                            <div class="product-info">
+                                <h3>Chocolate Dream</h3>
+                                <p>Chocolate ice cream, milk, whipped cream</p>
+                                <div class="product-footer">
+                                    <span class="price">₹209</span>
+                                    <button class="btn btn-sm">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-category="shakes">
+                            <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150" alt="Vanilla Cloud">
+                            <div class="product-info">
+                                <h3>Vanilla Cloud</h3>
+                                <p>Vanilla ice cream, milk, caramel drizzle</p>
+                                <div class="product-footer">
+                                    <span class="price">₹199</span>
+                                    <button class="btn btn-sm">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-category="shakes">
+                            <img src="C:\Users\Arpit\OneDrive\Documents\Desktop/pink.bmp" alt="Strawberry Fields">
+                            <div class="product-info">
+                                <h3>Strawberry Fields</h3>
+                                <p>Strawberry ice cream, fresh strawberries, milk</p>
+                                <div class="product-footer">
+                                    <span class="price">₹189</span>
+                                    <button class="btn btn-sm">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Juices -->
+                <div class="product-category">
+                    <h2 class="category-title">Cold-Pressed Juices</h2>
+                    <div class="category-items">
+                        <div class="product-card" data-category="juices">
+                            <img src="https://images.unsplash.com/photo-1536599424071-0b215a388ba7" alt="Green Detox">
+                            <div class="product-info">
+                                <h3>Green Detox</h3>
+                                <p>Kale, spinach, apple, lemon, ginger</p>
+                                <div class="product-footer">
+                                    <span class="price">₹289</span>
+                                    <button class="btn btn-sm">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-category="juices">
+                            <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a" alt="Citrus Sunrise">
+                            <div class="product-info">
+                                <h3>Citrus Sunrise</h3>
+                                <p>Orange, carrot, turmeric, ginger</p>
+                                <div class="product-footer">
+                                    <span class="price">₹199</span>
+                                    <button class="btn btn-sm">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-category="juices">
+                            <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a" alt="Beet Boost">
+                            <div class="product-info">
+                                <h3>Beet Boost</h3>
+                                <p>Beetroot, apple, lemon, ginger</p>
+                                <div class="product-footer">
+                                    <span class="price">₹169</span>
+                                    <button class="btn btn-sm">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boosters -->
+                <div class="product-category">
+                    <h2 class="category-title">Superfood Boosters(Add on)</h2>
+                    <div class="category-items">
+                        <div class="product-card" data-category="boosters">
+                            <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716" alt="Protein Punch">
+                            <div class="product-info">
+                                <h3>Protein Punch</h3>
+                                <p>Add plant-based protein to any drink</p>
+                                <div class="product-footer">
+                                    <span class="price">₹30</span>
+                                    <button class="btn btn-sm">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-category="boosters">
+                            <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716" alt="Energy Boost">
+                            <div class="product-info">
+                                <h3>Energy Boost</h3>
+                                <p>Maca, guarana, ginseng blend</p>
+                                <div class="product-footer">
+                                    <span class="price">₹25</span>
+                                    <button class="btn btn-sm">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-category="boosters">
+                            <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716" alt="Immunity Shield">
+                            <div class="product-info">
+                                <h3>Immunity Shield</h3>
+                                <p>Vitamin C, zinc, echinacea blend</p>
+                                <div class="product-footer">
+                                    <span class="price">₹55</span>
+                                    <button class="btn btn-sm">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customize Your Drink -->
+    <section class="customize-section" style="background-color: var(--secondary-color)">
+        <div class="container">
+            <div class="section-header">
+                <h2>Customize Your Drink</h2>
+                <p>Make it your own with these options</p>
+            </div>
+            <div class="customize-options">
+                <div class="option-card">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Milk Alternatives</h3>
+                    <p>Almond, oat, soy, coconut, or dairy</p>
+                </div>
+                <div class="option-card">
+                    <i class="fas fa-plus-circle"></i>
+                    <h3>Add-Ins</h3>
+                    <p>Protein, vitamins, superfoods, or extra fruit</p>
+                </div>
+                <div class="option-card">
+                    <i class="fas fa-thermometer-half"></i>
+                    <h3>Sweetness Level</h3>
+                    <p>Adjust honey, agave, or sugar to your taste</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Shakes&Shakes</h3>
+                    <p>Fresh. Healthy. Delicious. Your destination for premium shakes, smoothies, and juices.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i>New Delhi, Dwaraka</li>
+                        <li><i class="fas fa-phone"></i>+91 9569711841</li>
+                        <li><i class="fas fa-envelope"></i> info@shakesandshakes.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Hours</h3>
+                    <ul>
+                        <li>Monday - Friday: 7am - 9pm</li>
+                        <li>Saturday: 8am - 10pm</li>
+                        <li>Sunday: 8am - 8pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Shakes&Shakes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Product Filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const productCards = document.querySelectorAll('.product-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filterValue = button.getAttribute('data-filter');
+                
+                productCards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                // Show/hide category titles based on filter
+                const categoryTitles = document.querySelectorAll('.category-title');
+                categoryTitles.forEach(title => {
+                    const category = title.parentElement;
+                    const items = category.querySelectorAll('.product-card');
+                    const visibleItems = Array.from(items).filter(item => 
+                        item.style.display !== 'none' || filterValue === 'all'
+                    );
+                    
+                    if (filterValue === 'all' || visibleItems.length > 0) {
+                        category.style.display = 'block';
+                    } else {
+                        category.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Add to Order functionality
+        const addToOrderButtons = document.querySelectorAll('.product-footer .btn');
+        addToOrderButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const productName = button.closest('.product-info').querySelector('h3').textContent;
+                alert(`${productName} has been added to your order!`);
+            });
+        });
+    </script>
+</body>
+</html>
